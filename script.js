@@ -141,7 +141,7 @@ const certifications = [
         issuer: 'Red Team Leaders',
         date: '13/02/2026',
         category: 'securite',
-        image: 'certs/rtl-caisr.jpg',
+        image: 'rtl-caisr.jpg',
         verify: 'https://courses.redteamleaders.com/exam-completion/b062c0fc69e865b6'
     },
     {
@@ -150,7 +150,7 @@ const certifications = [
         issuer: 'Red Team Leaders',
         date: '20/06/2026',
         category: 'securite',
-        image: 'certs/rtl-cllmsp.jpg',
+        image: 'rtl-cllmsp.jpg',
         verify: 'https://courses.redteamleaders.com/exam-completion/86b60c0464e51e6f'
     },
     {
@@ -159,7 +159,7 @@ const certifications = [
         issuer: 'Cisco Networking Academy',
         date: '08/03/2026',
         category: 'securite',
-        image: 'certs/cisco-cyberintro.jpg',
+        image: 'cisco-cyberintro.jpg',
         verify: null
     },
     {
@@ -168,7 +168,7 @@ const certifications = [
         issuer: 'HP LIFE / HP Foundation',
         date: '29/06/2026',
         category: 'securite',
-        image: 'certs/hp-cyberaware.jpg',
+        image: 'hp-cyberaware.jpg',
         verify: null
     },
     {
@@ -177,7 +177,7 @@ const certifications = [
         issuer: 'Heure IA',
         date: '30/06/2026',
         category: 'securite',
-        image: 'certs/heureia-principes.jpg',
+        image: 'heureia-principes.jpg',
         verify: null
     },
     {
@@ -186,7 +186,7 @@ const certifications = [
         issuer: 'HP LIFE / HP Foundation',
         date: '29/06/2026',
         category: 'web',
-        image: 'certs/hp-webbiz.jpg',
+        image: 'hp-webbiz.jpg',
         verify: null
     },
     {
@@ -195,7 +195,7 @@ const certifications = [
         issuer: 'HP LIFE / HP Foundation',
         date: '29/06/2026',
         category: 'web',
-        image: 'certs/hp-networking.jpg',
+        image: 'hp-networking.jpg',
         verify: null
     },
     {
@@ -204,7 +204,7 @@ const certifications = [
         issuer: 'Cisco Networking Academy',
         date: '21/07/2026',
         category: 'web',
-        image: 'certs/cisco-ite702.jpg',
+        image: 'cisco-ite702.jpg',
         verify: null
     }
 ];
@@ -297,15 +297,15 @@ applyLang(savedLang);
 /* ============ GALERIE PROJET ============ */
 const projectGalleries = {
     klasso: [
-        'projects/klasso/klasso-1-home.jpg',
-        'projects/klasso/klasso-2-plans.jpg',
-        'projects/klasso/klasso-3-signup.jpg',
-        'projects/klasso/klasso-4-dashboard.jpg'
+        'klasso-1-home.jpg',
+        'klasso-2-plans.jpg',
+        'klasso-3-signup.jpg',
+        'klasso-4-dashboard.jpg'
     ],
     ecommerce: [
-        'projects/4epshop/4epshop-1-maillots.jpg',
-        'projects/4epshop/4epshop-2-montres.jpg',
-        'projects/4epshop/4epshop-3-panier.jpg'
+        '4epshop-1-maillots.jpg',
+        '4epshop-2-montres.jpg',
+        '4epshop-3-panier.jpg'
     ]
 };
 
