@@ -3,17 +3,25 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portfolio | Rachid Tchakoura</title>
-<meta name="description" content="Rachid Tchakoura, étudiant en Systèmes, Réseaux &amp; Informatique à l'ESGIS. Projets, certifications et compétences en réseaux, systèmes et sécurité informatique.">
+<title>Portfolio | A.Rachid TCHAKOURA</title>
+<meta name="description" content="A.Rachid TCHAKOURA, étudiant en Informatique à l'ESGIS. Projets, certifications et compétences en développement web, réseaux et systèmes.">
+<meta property="og:title" content="A.Rachid TCHAKOURA — Portfolio">
+<meta property="og:description" content="Étudiant en informatique, développement web, réseaux et systèmes.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://rachidfolio.netlify.app/">
+<meta property="og:image" content="https://rachidfolio.netlify.app/images/rachid1.jpg">
+<meta name="theme-color" content="#0A0D14">
+<link rel="canonical" href="https://rachidfolio.netlify.app/">
+<link rel="icon" href="icons/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<canvas id="netbg"></canvas>
+<canvas id="netbg" aria-hidden="true"></canvas>
 
 <!-- ===== HEADER ===== -->
 <header>
@@ -35,8 +43,8 @@
 
             <div class="nav-controls">
                 <button class="lang-toggle" id="lang-toggle" aria-label="Changer de langue" title="Français / English">
-                    <svg class="flag flag-fr" viewBox="0 0 3 2" width="22" height="15"><rect width="1" height="2" x="0" fill="#0055A4"/><rect width="1" height="2" x="1" fill="#FFFFFF"/><rect width="1" height="2" x="2" fill="#EF4135"/></svg>
-                    <svg class="flag flag-en" viewBox="0 0 60 30" width="22" height="15" style="display:none">
+                    <svg class="flag flag-fr" viewBox="0 0 3 2" width="22" height="15" style="display:none"><rect width="1" height="2" x="0" fill="#0055A4"/><rect width="1" height="2" x="1" fill="#FFFFFF"/><rect width="1" height="2" x="2" fill="#EF4135"/></svg>
+                    <svg class="flag flag-en" viewBox="0 0 60 30" width="22" height="15">
                         <clipPath id="s"><path d="M0,0 v30 h60 v-30 z"/></clipPath>
                         <g clip-path="url(#s)">
                             <path d="M0,0 v30 h60 v-30 z" fill="#012169"/>
@@ -46,11 +54,11 @@
                             <path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/>
                         </g>
                     </svg>
-                    <span class="lang-label" id="lang-label">FR</span>
+                    <span class="lang-label" id="lang-label">EN</span>
                 </button>
                 <button class="theme-toggle" id="theme-toggle" aria-label="Changer de thème" title="Mode clair / sombre">
-                    <svg id="icon-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-                    <svg id="icon-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" style="display:none"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                    <svg id="icon-moon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M20.4 14.7A8.7 8.7 0 0 1 9.3 3.6 9.1 9.1 0 1 0 20.4 14.7Z"/></svg>
+                    <svg id="icon-sun" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="display:none" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.65 17.65l1.42 1.42M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.65 6.35l1.42-1.42"/></svg>
                 </button>
             </div>
         </nav>
@@ -60,167 +68,145 @@
 <!-- ===== HERO ===== -->
 <section id="home" class="hero">
     <div class="hero-content">
-        <p class="eyebrow">// system@localhost ~ %</p>
-        <h1>Rachid <span class="accent">Tchakoura</span></h1>
-        <h3 data-i18n="hero_subtitle">Étudiant en Systèmes &amp; Réseaux Informatiques</h3>
-        <p class="hero-tagline" data-i18n="hero_tagline">Passionné par les réseaux, l'administration systèmes et la sécurité informatique. En route vers le métier d'ingénieur réseau.</p>
-        <div class="hero-links">
-            <a href="#about" class="btn" data-i18n="hero_btn1">Découvrir mon profil</a>
-            <a href="#contact" class="btn btn-ghost" data-i18n="hero_btn2">Me contacter</a>
+        <div class="hero-top">
+            <span class="status-pill"><span class="status-dot"></span><span data-i18n="hero_status">Disponible pour un stage ou projet pratique en développement web, réseaux ou systèmes</span></span>
+        </div>
+
+        <div class="hero-grid">
+            <div class="hero-main">
+                <h1 aria-label="A.Rachid TCHAKOURA"><span>A.Rachid</span><span class="accent">TCHAKOURA</span></h1>
+                <h3 data-i18n="hero_subtitle">Étudiant en informatique — développement web, réseaux &amp; systèmes</h3>
+                <p class="hero-tagline" data-i18n="hero_tagline">Je conçois des interfaces web utiles et je développe mes compétences en réseaux et systèmes avec une approche simple, rigoureuse et orientée solutions.</p>
+                <div class="hero-links">
+                    <a href="#projects" class="btn" data-i18n="hero_btn1">Voir mes projets</a>
+                    <a href="#contact" class="btn btn-ghost" data-i18n="hero_btn2">Me contacter</a>
+                    <a href="documents/CV-TCHAKOURA-Abdoul-Rachid.pdf" class="btn btn-cv" download data-i18n="hero_cv">Télécharger mon CV</a>
+                </div>
+                <div class="hero-social-links">
+                    <a href="https://github.com/elmonumento" target="_blank" rel="noopener">GitHub</a>
+                    <a href="https://linkedin.com/in/abdoul-rachid-tchakoura-46a48639a/fr/" target="_blank" rel="noopener">LinkedIn</a>
+                </div>
+            </div>
+            <div class="hero-portrait-wrap">
+                <img src="images/rachid1.jpg" alt="Photo Rachid" class="hero-portrait">
+                <div class="hero-profile">
+                    <span class="hero-profile-label" data-i18n="hero_profile_label">Mon profil</span>
+                    <strong data-i18n="hero_profile_role">Web · Réseaux · Systèmes</strong>
+                    <span data-i18n="hero_meta1_value">Lomé, Togo</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="ticker" aria-hidden="true">
+            <div class="ticker-track">
+                <span>Réseaux</span><span class="dot-sep">·</span><span>Linux</span><span class="dot-sep">·</span><span>Windows</span><span class="dot-sep">·</span><span>VirtualBox</span><span class="dot-sep">·</span><span>Cisco Packet Tracer</span><span class="dot-sep">·</span><span>GNS3</span><span class="dot-sep">·</span><span>Wireshark</span><span class="dot-sep">·</span><span>HTML</span><span class="dot-sep">·</span><span>CSS</span><span class="dot-sep">·</span><span>JavaScript</span><span class="dot-sep">·</span><span>PHP</span><span class="dot-sep">·</span><span>Java</span><span class="dot-sep">·</span><span>C</span><span class="dot-sep">·</span><span>Git</span><span class="dot-sep">·</span><span>GitHub</span>
+                <span>Réseaux</span><span class="dot-sep">·</span><span>Linux</span><span class="dot-sep">·</span><span>Windows</span><span class="dot-sep">·</span><span>VirtualBox</span><span class="dot-sep">·</span><span>Cisco Packet Tracer</span><span class="dot-sep">·</span><span>GNS3</span><span class="dot-sep">·</span><span>Wireshark</span><span class="dot-sep">·</span><span>HTML</span><span class="dot-sep">·</span><span>CSS</span><span class="dot-sep">·</span><span>JavaScript</span><span class="dot-sep">·</span><span>PHP</span><span class="dot-sep">·</span><span>Java</span><span class="dot-sep">·</span><span>C</span><span class="dot-sep">·</span><span>Git</span><span class="dot-sep">·</span><span>GitHub</span>
+            </div>
         </div>
     </div>
 </section>
 
 <!-- ===== ABOUT ===== -->
-<section id="about" class="section">
-    <p class="tag" data-i18n="about_tag">01 — profil</p>
+<section id="about" class="section about-section">
     <div class="about-grid">
-        <img src="rachid1.jpg" alt="Photo Rachid" class="portrait">
-        <p class="paragraph" data-i18n="about_text">
-            Je suis <strong>TCHAKOURA Abdoul-Rachid</strong>, âgé de 18 ans, actuellement étudiant en 1ère année de
-            Systèmes, Réseaux &amp; Informatique à l'ESGIS. Par ma rigueur et ma discipline, j'ai développé des
-            compétences en administration systèmes, réseaux, virtualisation et sécurité informatique.
-            L'informatique me fascine depuis l'enfance et j'ai mis tout en œuvre pour intégrer ce domaine.
-            Mon objectif est de devenir <strong>ingénieur réseaux</strong>.
-        </p>
+        <div>
+            <p class="section-kicker" data-i18n="about_kicker">Profil</p>
+            <h2 data-i18n="about_title">Construire des bases solides, projet après projet.</h2>
+        </div>
+        <div class="about-copy">
+            <p data-i18n="about_text">Étudiant en première année d'informatique à l'ESGIS, je développe progressivement mes compétences en développement web, administration systèmes et réseaux. Je recherche des stages et des projets pratiques pour transformer mes connaissances en expérience concrète.</p>
+            <div class="about-focus">
+                <span data-i18n="about_focus_title">Je recherche</span>
+                <span data-i18n="about_focus_text">Stages, projets pratiques et collaborations en développement web, réseaux, systèmes et support informatique.</span>
+            </div>
+        </div>
     </div>
 </section>
 
 <!-- ===== SKILLS ===== -->
 <section id="skills" class="section alt">
-    <p class="tag" data-i18n="skills_tag">02 — compétences</p>
     <h2 data-i18n="skills_title">Ce que je maîtrise</h2>
+    <p class="skills-intro" data-i18n="skills_intro">Mes domaines principaux sont le développement web, les réseaux et l’administration systèmes. La virtualisation, la cybersécurité et le langage C complètent ce socle.</p>
 
     <div class="skill-cards">
         <div class="skill-card">
             <div class="skill-head">
                 <h3 data-i18n="skill1_name">Réseaux</h3>
-                <span class="skill-level" data-i18n="lvl_inter">Intermédiaire</span>
             </div>
-            <div class="skill-bar"><div class="skill-fill" style="width:55%"></div></div>
             <p data-i18n="skill1_desc">Adressage IP, câblage RJ45, configuration d'équipements réseau.</p>
         </div>
         <div class="skill-card">
             <div class="skill-head">
                 <h3 data-i18n="skill2_name">Administration systèmes</h3>
-                <span class="skill-level" data-i18n="lvl_inter">Intermédiaire</span>
             </div>
-            <div class="skill-bar"><div class="skill-fill" style="width:50%"></div></div>
             <p data-i18n="skill2_desc">Windows, Linux, gestion des utilisateurs et des services.</p>
         </div>
         <div class="skill-card">
             <div class="skill-head">
                 <h3 data-i18n="skill3_name">Virtualisation</h3>
-                <span class="skill-level" data-i18n="lvl_inter">Intermédiaire</span>
             </div>
-            <div class="skill-bar"><div class="skill-fill" style="width:45%"></div></div>
             <p data-i18n="skill3_desc">Création et configuration de machines virtuelles avec VirtualBox.</p>
         </div>
         <div class="skill-card">
             <div class="skill-head">
                 <h3 data-i18n="skill4_name">Sécurité informatique &amp; IA</h3>
-                <span class="skill-level" data-i18n="lvl_notion">Notions</span>
             </div>
-            <div class="skill-bar"><div class="skill-fill" style="width:35%"></div></div>
             <p data-i18n="skill4_desc">Sensibilisation aux menaces, bonnes pratiques et sécurité des systèmes d'IA.</p>
         </div>
         <div class="skill-card">
             <div class="skill-head">
                 <h3 data-i18n="skill5_name">Développement web</h3>
-                <span class="skill-level" data-i18n="lvl_inter">Intermédiaire</span>
             </div>
-            <div class="skill-bar"><div class="skill-fill" style="width:60%"></div></div>
             <p data-i18n="skill5_desc">HTML, CSS et JavaScript pour la création de sites web.</p>
         </div>
         <div class="skill-card">
             <div class="skill-head">
                 <h3 data-i18n="skill6_name">Programmation C</h3>
-                <span class="skill-level" data-i18n="lvl_debutant">Débutant</span>
             </div>
-            <div class="skill-bar"><div class="skill-fill" style="width:30%"></div></div>
             <p data-i18n="skill6_desc">Bases de l'algorithmique et de la programmation structurée.</p>
         </div>
     </div>
 
     <h3 class="sub-title" data-i18n="tools_title">Outils &amp; technologies</h3>
-    <div class="pills">
-        <span class="pill">Windows</span>
-        <span class="pill">Linux</span>
-        <span class="pill">VirtualBox</span>
-        <span class="pill">Cisco Packet Tracer</span>
-        <span class="pill">GNS3</span>
-        <span class="pill">Wireshark</span>
-        <span class="pill">VS Code</span>
-        <span class="pill">Git</span>
-        <span class="pill">GitHub</span>
+    <div class="pills tech-pills">
+        <span class="pill tech-pill" title="Windows" aria-label="Windows"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" alt=""></span>
+        <span class="pill tech-pill" title="Linux" aria-label="Linux"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt=""></span>
+        <span class="pill tech-pill" title="VirtualBox" aria-label="VirtualBox"><img src="icons/icon-virtualbox.svg" alt="VirtualBox"></span>
+        <span class="pill tech-pill" title="Cisco Packet Tracer" aria-label="Cisco Packet Tracer"><img src="icons/icon-cisco.svg" alt="Cisco"></span>
+        <span class="pill tech-pill" title="GNS3" aria-label="GNS3"><img src="icons/icon-gns3.svg" alt="GNS3"></span>
+        <span class="pill tech-pill" title="Wireshark" aria-label="Wireshark"><img src="icons/icon-wireshark.svg" alt="Wireshark"></span>
+        <span class="pill tech-pill" title="VS Code" aria-label="VS Code"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt=""></span>
+        <span class="pill tech-pill" title="Git" aria-label="Git"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt=""></span>
+        <span class="pill tech-pill github-pill" title="GitHub" aria-label="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.9-1.3 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.75c0 .26.18.58.69.48A10 10 0 0 0 12 2z"/></svg></span>
     </div>
 
     <h3 class="sub-title" data-i18n="langs_title">Langages de programmation</h3>
-    <div class="pills">
-        <span class="pill">HTML</span>
-        <span class="pill">CSS</span>
-        <span class="pill">JavaScript</span>
-        <span class="pill">Java</span>
-        <span class="pill">PHP</span>
-        <span class="pill">C</span>
-
+    <div class="pills tech-pills">
+        <span class="pill tech-pill" title="HTML" aria-label="HTML"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt=""></span>
+        <span class="pill tech-pill" title="CSS" aria-label="CSS"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt=""></span>
+        <span class="pill tech-pill" title="JavaScript" aria-label="JavaScript"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt=""></span>
+        <span class="pill tech-pill" title="Java" aria-label="Java"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt=""></span>
+        <span class="pill tech-pill" title="PHP" aria-label="PHP"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt=""></span>
+        <span class="pill tech-pill" title="C" aria-label="C"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt=""></span>
     </div>
 </section>
 
 <!-- ===== PROJECTS ===== -->
 <section id="projects" class="section">
-    <p class="tag" data-i18n="projects_tag">03 — projets</p>
     <h2 data-i18n="projects_title">Ce que j'ai réalisé</h2>
 
-    <div class="cards">
-        <div class="card">
-            <h3 data-i18n="proj1_name">Portfolio personnel</h3>
-            <p data-i18n="proj1_desc">Création de mon site web professionnel.</p>
-            <div class="card-tags">
-                <span class="pill pill-sm">HTML</span>
-                <span class="pill pill-sm">CSS</span>
-                <span class="pill pill-sm">JavaScript</span>
-            </div>
-        </div>
-        <div class="card card-clickable" data-project="ecommerce">
-            <h3 data-i18n="proj2_name">4EP SHOP</h3>
-            <p data-i18n="proj2_desc">Boutique en ligne : maillots, casquettes, montres, avec panier et paiement mobile.</p>
-            <div class="card-tags">
-                <span class="pill pill-sm">HTML</span>
-                <span class="pill pill-sm">CSS</span>
-                <span class="pill pill-sm">JavaScript</span>
-            </div>
-            <span class="card-view-hint" data-i18n="proj_view_hint">🔍 Voir les captures d'écran</span>
-        </div>
-        <div class="card">
-            <h3 data-i18n="proj3_name">Gestion étudiants</h3>
-            <p data-i18n="proj3_desc">Application de gestion en langage C.</p>
-            <div class="card-tags">
-                <span class="pill pill-sm">C</span>
-            </div>
-        </div>
-        <div class="card card-clickable" data-project="klasso">
-            <h3 data-i18n="proj4_name">Klasso — Gestion scolaire</h3>
-            <p data-i18n="proj4_desc">Plateforme de gestion scolaire développée seul, pour les écoles du Togo : inscriptions, écolages, présences, notes et tableau de bord administrateur, avec mode sombre/clair et interface bilingue FR/EN.</p>
-            <div class="card-tags">
-                <span class="pill pill-sm">HTML</span>
-                <span class="pill pill-sm">CSS</span>
-                <span class="pill pill-sm">JavaScript</span>
-            </div>
-            <span class="card-view-hint" data-i18n="proj_view_hint">🔍 Voir les captures d'écran</span>
-        </div>
-    </div>
+    <div class="project-grid" id="project-grid"></div>
 </section>
 
 <!-- ===== CERTIFICATIONS ===== -->
 <section id="certif" class="section alt">
-    <p class="tag" data-i18n="certif_tag">04 — certifications</p>
     <h2 data-i18n="certif_title">Mes certifications</h2>
 
     <div class="filters" id="cert-filters">
         <button class="filter-btn active" data-filter="all" data-i18n="filter_all">Tout</button>
         <button class="filter-btn" data-filter="securite" data-i18n="filter_sec">Cybersécurité & IA</button>
         <button class="filter-btn" data-filter="web" data-i18n="filter_web">Web & Networking</button>
+        <button class="filter-btn" data-filter="badge" data-i18n="filter_badge">Badges</button>
     </div>
 
     <div class="cert-grid" id="cert-grid"></div>
@@ -228,21 +214,20 @@
 
 <!-- ===== PARCOURS ===== -->
 <section id="parcours" class="section">
-    <p class="tag" data-i18n="parcours_tag">05 — parcours</p>
-    <h2 data-i18n="parcours_title">Mon parcours scolaire</h2>
+    <h2 data-i18n="parcours_title">Mon parcours</h2>
 
     <div class="timeline">
+        <div class="tl-item">
+            <span class="tl-year">2026</span>
+            <div class="tl-content">
+                <h3 data-i18n="tl_l1">Licence Informatique à ESGIS</h3>
+                <p data-i18n="tl_current">En cours.</p>
+            </div>
+        </div>
         <div class="tl-item">
             <span class="tl-year">2025</span>
             <div class="tl-content">
                 <h3>BAC Série D</h3>
-                <p data-i18n="tl_mention">Obtenu avec mention.</p>
-            </div>
-        </div>
-        <div class="tl-item">
-            <span class="tl-year">2024</span>
-            <div class="tl-content">
-                <h3>BAC 1 Série D</h3>
                 <p data-i18n="tl_mention">Obtenu avec mention.</p>
             </div>
         </div>
@@ -265,15 +250,21 @@
 
 <!-- ===== CONTACT ===== -->
 <section id="contact" class="section alt contact">
-    <p class="tag" data-i18n="contact_tag">06 — contact</p>
     <h2 data-i18n="contact_title">Discutons</h2>
-    <p class="contact-intro" data-i18n="contact_intro">Disponible pour des stages, des projets pratiques ou toute opportunité en réseaux et systèmes informatiques.</p>
+    <p class="contact-intro" data-i18n="contact_intro">Vous avez un projet, une opportunité de stage ou une question ? Écrivez-moi directement.</p>
+    <div class="contact-actions">
+        <a class="btn" href="mailto:rachidtchakoura1@gmail.com" data-i18n="contact_email_btn">Envoyer un email</a>
+        <a class="btn btn-ghost" href="https://wa.me/22896077475" target="_blank" rel="noopener" data-i18n="contact_whatsapp_btn">Écrire sur WhatsApp</a>
+    </div>
     <div class="contact-icons">
-        <a class="contact-icon" href="mailto:rachidtchakoura707@gmail.com" data-i18n-title="contact_email" title="Email" aria-label="Email">
+        <a class="contact-icon" href="mailto:rachidtchakoura1@gmail.com" data-i18n-title="contact_email" title="Email" aria-label="Email">
             <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16v16H4z"/><path d="M4 6l8 7 8-7"/></svg>
         </a>
         <a class="contact-icon" href="tel:+22896077475" data-i18n-title="contact_phone" title="Téléphone" aria-label="Téléphone">
             <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.4 2.1L8 9.9a16 16 0 0 0 6 6l1.4-1.4a2 2 0 0 1 2.1-.4c.9.3 1.8.5 2.7.7a2 2 0 0 1 1.8 2z"/></svg>
+        </a>
+        <a class="contact-icon" href="https://wa.me/22896077475" target="_blank" rel="noopener" data-i18n-title="contact_whatsapp" title="WhatsApp" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.29-1.39a9.9 9.9 0 0 0 4.75 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm0 1.67c2.19 0 4.25.85 5.8 2.4a8.2 8.2 0 0 1 2.41 5.84c0 4.55-3.7 8.25-8.25 8.25a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.14.82.84-3.06-.2-.31a8.18 8.18 0 0 1-1.26-4.37c0-4.55 3.7-8.24 8.29-8.24zm-4.53 4.72c-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.03 0 1.2.87 2.35.99 2.51.12.16 1.71 2.74 4.26 3.73 2.12.83 2.55.66 3.01.62.46-.04 1.49-.61 1.7-1.19.21-.58.21-1.08.15-1.19-.06-.11-.23-.17-.48-.3-.25-.13-1.49-.74-1.72-.82-.23-.08-.4-.13-.57.13-.17.25-.65.82-.8.99-.15.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.25-.75-.67-1.25-1.5-1.4-1.75-.15-.25-.02-.39.11-.51.11-.11.25-.29.37-.44.12-.15.16-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.57-1.4-.79-1.91-.2-.5-.41-.43-.57-.44-.15-.01-.31-.01-.48-.01z"/></svg>
         </a>
         <a class="contact-icon" href="https://github.com/elmonumento" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub">
             <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.9-1.3 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.75c0 .26.18.58.69.48A10 10 0 0 0 12 2z"/></svg>
@@ -288,7 +279,7 @@
 </section>
 
 <footer>
-    <p>© Rachid Tchakoura 2026 — <span data-i18n="footer_rights">Tous droits réservés</span></p>
+    <p>© A.Rachid TCHAKOURA 2026 — <span data-i18n="footer_rights">Tous droits réservés</span></p>
 </footer>
 
 <!-- ===== MODALE CERTIFICATION ===== -->
@@ -304,14 +295,26 @@
     </div>
 </div>
 
-<!-- ===== MODALE GALERIE PROJET ===== -->
-<div class="modal-overlay" id="gallery-modal">
-    <div class="gallery-panel">
-        <button class="modal-close gallery-close" id="gallery-close" aria-label="Fermer">&times;</button>
-        <button class="gallery-nav gallery-prev" id="gallery-prev" aria-label="Précédent">&#10094;</button>
-        <img id="gallery-image" src="" alt="">
-        <button class="gallery-nav gallery-next" id="gallery-next" aria-label="Suivant">&#10095;</button>
-        <div class="gallery-counter" id="gallery-counter"></div>
+<!-- ===== MODALE PROJET ===== -->
+<div class="modal-overlay" id="project-modal">
+    <div class="modal-panel project-panel">
+        <button class="modal-close" id="project-modal-close" aria-label="Fermer">&times;</button>
+        <div class="project-modal-media" id="project-modal-media">
+            <img id="project-modal-image" src="" alt="">
+            <div class="project-thumb-placeholder" id="project-modal-placeholder"><span>&lt;/&gt;</span></div>
+            <button class="gallery-nav gallery-prev" id="project-modal-prev" aria-label="Précédent">&#10094;</button>
+            <button class="gallery-nav gallery-next" id="project-modal-next" aria-label="Suivant">&#10095;</button>
+            <div class="gallery-counter" id="project-modal-counter"></div>
+        </div>
+        <div class="modal-body">
+            <h3 id="project-modal-title"></h3>
+            <span id="project-modal-status" class="project-status"></span>
+            <div class="card-tags" id="project-modal-tags"></div>
+            <p id="project-modal-desc"></p>
+            <p id="project-modal-role" class="project-modal-role"></p>
+            <a id="project-modal-repo" class="btn btn-ghost" href="#" target="_blank" rel="noopener" data-i18n="proj_repo"></a>
+            <a id="project-modal-link" class="btn btn-dark" href="#" target="_blank" rel="noopener"></a>
+        </div>
     </div>
 </div>
 

@@ -37,66 +37,104 @@ const translations = {
     fr: {
         nav_home: "Accueil", nav_about: "À propos", nav_skills: "Compétences",
         nav_projects: "Projets", nav_certif: "Certifications", nav_parcours: "Parcours", nav_contact: "Contact",
-        hero_subtitle: "Étudiant en Systèmes &amp; Réseaux Informatiques",
-        hero_tagline: "Passionné par les réseaux, l'administration systèmes et la sécurité informatique. En route vers le métier d'ingénieur réseau.",
-        hero_btn1: "Découvrir mon profil", hero_btn2: "Me contacter",
-        about_tag: "01 — Profil",
-        about_text: "Je suis <strong>TCHAKOURA Abdoul-Rachid</strong>, âgé de 18 ans, actuellement étudiant en 1ère année de Systèmes, Réseaux &amp; Informatique à l'ESGIS. Par ma rigueur et ma discipline, j'ai développé des compétences en administration systèmes, réseaux, virtualisation et sécurité informatique. L'informatique me fascine depuis l'enfance et j'ai mis tout en œuvre pour intégrer ce domaine. Mon objectif est de devenir <strong>ingénieur réseaux</strong>.",
-        skills_tag: "02 — Compétences", skills_title: "Ce que je maîtrise",
+        hero_subtitle: "Étudiant en informatique — développement web, réseaux &amp; systèmes",
+        hero_tagline: "Je conçois des interfaces web utiles et je développe mes compétences en réseaux et systèmes avec une approche simple, rigoureuse et orientée solutions.",
+        hero_btn1: "Voir mes projets", hero_btn2: "Me contacter", hero_cv: "Télécharger mon CV",
+        hero_status: "Disponible pour un stage ou projet pratique en développement web, réseaux ou systèmes",
+        hero_meta1_value: "Lomé, Togo",
+        hero_profile_label: "Mon profil",
+        hero_profile_role: "Web · Réseaux · Systèmes",
+        about_kicker: "Profil",
+        about_title: "Construire des bases solides, projet après projet.",
+        about_text: "Étudiant en première année d'informatique à l'ESGIS, je développe progressivement mes compétences en développement web, administration systèmes et réseaux. Je recherche des stages et des projets pratiques pour transformer mes connaissances en expérience concrète.",
+        about_focus_title: "Je recherche",
+        about_focus_text: "Stages, projets pratiques et collaborations en développement web, réseaux, systèmes et support informatique.",
+        skills_title: "Ce que je maîtrise",
+        skills_intro: "Mes domaines principaux sont le développement web, les réseaux et l’administration systèmes. La virtualisation, la cybersécurité et le langage C complètent ce socle.",
         skill1_name: "Réseaux", skill1_desc: "Adressage IP, câblage RJ45, configuration d'équipements réseau.",
         skill2_name: "Administration systèmes", skill2_desc: "Windows, Linux, gestion des utilisateurs et des services.",
         skill3_name: "Virtualisation", skill3_desc: "Création et configuration de machines virtuelles avec VirtualBox.",
         skill4_name: "Sécurité informatique &amp; IA", skill4_desc: "Sensibilisation aux menaces, bonnes pratiques et sécurité des systèmes d'IA.",
         skill5_name: "Développement web", skill5_desc: "HTML, CSS et JavaScript pour la création de sites web.",
         skill6_name: "Programmation C", skill6_desc: "Bases de l'algorithmique et de la programmation structurée.",
-        lvl_inter: "Intermédiaire", lvl_notion: "Notions", lvl_debutant: "Débutant",
         tools_title: "Outils &amp; technologies", langs_title: "Langages de programmation",
-        projects_tag: "03 — Projets", projects_title: "Ce que j'ai réalisé",
-        proj1_name: "Portfolio personnel", proj1_desc: "Création de mon site web professionnel.",
-        proj2_name: "4EP SHOP", proj2_desc: "Boutique en ligne : maillots, casquettes, montres, avec panier et paiement mobile (Orange Money, MTN, Moov Africa, Visa).",
-        proj3_name: "Gestion étudiants", proj3_desc: "Application de gestion en langage C.",
-        proj4_name: "Klasso — Gestion scolaire", proj4_desc: "Plateforme de gestion scolaire développée seul, pour les écoles du Togo : inscriptions, écolages, présences, notes et tableau de bord administrateur, avec mode sombre/clair et interface bilingue FR/EN.",
-        proj_view_hint: " Voir les captures d'écran",
-        certif_tag: "04 — Certifications", certif_title: "Mes certifications",
+        projects_title: "Ce que j'ai réalisé",
+        proj4_name: "Klasso — Gestion scolaire", proj4_desc: "Projet personnel — plateforme de gestion scolaire pour les établissements du Togo. Rôle : conception de l'interface et développement des écrans de gestion, avec mode sombre/clair et interface FR/EN.",
+        proj5_name: "NowPay — Relance IA des impayés", proj5_desc: "Prototype SaaS — suivi des créances pour PME, relances automatisées, scan de factures et historique des encaissements. Technologies : Next.js, Supabase et IA.",
+        proj6_name: "Site vitrine — Payroll Bassit", proj6_desc: "Projet livré — site vitrine pour l'artiste togolais Payroll Bassit : présentation, discographie, concerts et booking. Réalisé avec Bolt.",
+        proj7_name: "CampusEvents — Gestion d'événements universitaires", proj7_desc: "Prototype réalisé en équipe (4 personnes) — plateforme de gestion d'événements universitaires : catalogue filtrable, inscriptions, calendrier et tableau de bord administrateur. Développé en PHP et MySQL.",
+        proj7_role: "Projet d’équipe de quatre personnes — conception de la plateforme et développement des fonctionnalités événementielles.",
+        proj8_name: "SoundWave — Bibliothèque musicale", proj8_desc: "Application web de découverte et d’écoute musicale avec recherche Spotify, lecteur officiel, favoris, playlists personnelles et historique. Technologies : Next.js, React, TypeScript et MySQL.",
+        proj8_role: "Conception et développement d’une application musicale responsive avec comptes et bibliothèque personnelle.",
+        proj9_name: "CyberLab — Apprentissage de la cybersécurité", proj9_desc: "Plateforme pédagogique locale avec six modules, leçons, laboratoires simulés et quiz progressifs. La progression est conservée dans le navigateur et les exercices ne ciblent aucun système externe.",
+        proj9_role: "Conception et développement d’un parcours d’apprentissage interactif, sûr et adapté aux débutants.",
+        proj_view_hint: "<svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M2.5 12s3.2-5 9.5-5 9.5 5 9.5 5-3.2 5-9.5 5-9.5-5-9.5-5Z\"/><circle cx=\"12\" cy=\"12\" r=\"2.5\"/></svg> Voir les détails",
+        proj_visit: "Visiter le site ↗",
+        proj_status_personal: "Projet personnel",
+        proj_status_prototype: "Prototype",
+        proj_status_delivered: "Projet livré",
+        certif_title: "Mes certifications",
         filter_all: "Tout", filter_sec: "Cybersécurité & IA", filter_web: "Web & Networking", filter_badge: "Badges",
-        parcours_tag: "05 — Parcours", parcours_title: "Mon parcours scolaire",
+        parcours_title: "Mon parcours",
+        tl_l1: "Licence Informatique à ESGIS", tl_current: "En cours.",
         tl_mention: "Obtenu avec mention.", tl_obtenu: "Obtenu.",
-        contact_tag: "06 — Contact", contact_title: "Discutons",
-        contact_intro: "Disponible pour des stages, des projets pratiques ou toute opportunité en Informatiques.",
-        contact_email: "Email", contact_phone: "Téléphone", contact_loc: "Localisation",
+        contact_title: "Discutons",
+        contact_intro: "Vous avez un projet, une opportunité de stage ou une question ? Écrivez-moi directement.",
+        contact_email_btn: "Envoyer un email", contact_whatsapp_btn: "Écrire sur WhatsApp",
+        proj_repo: "Voir le code sur GitHub ↗",
+        contact_email: "Email", contact_phone: "Téléphone", contact_whatsapp: "WhatsApp", contact_loc: "Localisation",
         footer_rights: "Tous droits réservés",
         modal_verify: "Vérifier la certification"
     },
     en: {
         nav_home: "Home", nav_about: "About", nav_skills: "Skills",
         nav_projects: "Projects", nav_certif: "Certifications", nav_parcours: "Education", nav_contact: "Contact",
-        hero_subtitle: "Computer Systems &amp; Networks Student",
-        hero_tagline: "Passionate about networking, systems administration and cybersecurity. On my way to becoming a network engineer.",
-        hero_btn1: "Discover my profile", hero_btn2: "Contact me",
-        about_tag: "01 — Profile",
-        about_text: "I'm <strong>TCHAKOURA Abdoul-Rachid</strong>, 18 years old, currently a first-year student in Systems, Networks &amp; Computer Science at ESGIS. Through discipline and rigor, I've developed skills in systems administration, networking, virtualization and cybersecurity. Computing has fascinated me since childhood and I've worked hard to enter this field. My goal is to become a <strong>network engineer</strong>.",
-        skills_tag: "02 — Skills", skills_title: "What I master",
+        hero_subtitle: "Computer science student — web development, networks &amp; systems",
+        hero_tagline: "I build useful web interfaces and develop my networking and systems skills with a simple, rigorous and solution-focused approach.",
+        hero_btn1: "View my projects", hero_btn2: "Contact me", hero_cv: "Download my CV",
+        hero_status: "Available for an internship or practical project in web development, networking or systems",
+        hero_meta1_value: "Lomé, Togo",
+        hero_profile_label: "My profile",
+        hero_profile_role: "Web · Networks · Systems",
+        about_kicker: "Profile",
+        about_title: "Building solid foundations, one project at a time.",
+        about_text: "I am a first-year computer science student at ESGIS, gradually developing my skills in web development, systems administration and networking. I am looking for internships and practical projects to turn my knowledge into hands-on experience.",
+        about_focus_title: "Looking for",
+        about_focus_text: "Internships, practical projects and collaborations in web development, networking, systems and IT support.",
+        skills_title: "What I master",
+        skills_intro: "My main areas are web development, networking and systems administration. Virtualization, cybersecurity and C programming complement this foundation.",
         skill1_name: "Networking", skill1_desc: "IP addressing, RJ45 cabling, network equipment configuration.",
         skill2_name: "Systems administration", skill2_desc: "Windows, Linux, user and service management.",
         skill3_name: "Virtualization", skill3_desc: "Creating and configuring virtual machines with VirtualBox.",
         skill4_name: "Cybersecurity &amp; AI", skill4_desc: "Threat awareness, best practices and AI systems security.",
         skill5_name: "Web development", skill5_desc: "HTML, CSS and JavaScript for building websites.",
         skill6_name: "C Programming", skill6_desc: "Fundamentals of algorithms and structured programming.",
-        lvl_inter: "Intermediate", lvl_notion: "Basic notions", lvl_debutant: "Beginner",
         tools_title: "Tools &amp; technologies", langs_title: "Programming languages",
-        projects_tag: "03 — Projects", projects_title: "What I've built",
-        proj1_name: "Personal portfolio", proj1_desc: "Building my own professional website.",
-        proj2_name: "4EP SHOP", proj2_desc: "Online shop: jerseys, caps, watches, with cart and mobile payment (Orange Money, MTN, Moov Africa, Visa).",
-        proj3_name: "Student management", proj3_desc: "Management application written in C.",
-        proj4_name: "Klasso — School management", proj4_desc: "School management platform built solo, for schools in Togo: enrollment, fees, attendance, grades and admin dashboard, with dark/light mode and a bilingual FR/EN interface.",
-        proj_view_hint: " View screenshots",
-        certif_tag: "04 — Certifications", certif_title: "My certifications",
+        projects_title: "What I've built",
+        proj4_name: "Klasso — School management", proj4_desc: "Personal project — school management platform for schools in Togo. Role: interface design and development of management screens, with dark/light mode and FR/EN interface.",
+        proj5_name: "NowPay — AI-powered payment reminders", proj5_desc: "Prototype — SME receivables tracking with automated reminders, invoice scanning and payment history. Technologies: Next.js, Supabase and AI.",
+        proj6_name: "Website — Payroll Bassit", proj6_desc: "Delivered project — showcase website for Togolese artist Payroll Bassit: bio, discography, concerts and booking. Built with Bolt.",
+        proj7_name: "CampusEvents — University event management", proj7_desc: "Prototype built as a team (4 people) — university event management platform: filterable catalog, registrations, calendar and admin dashboard. Built with PHP and MySQL.",
+        proj7_role: "Four-person team project — platform design and development of event-management features.",
+        proj8_name: "SoundWave — Music library", proj8_desc: "A web app for music discovery and listening with Spotify search, the official player, favorites, personal playlists and listening history. Technologies: Next.js, React, TypeScript and MySQL.",
+        proj8_role: "Designed and built a responsive music application with accounts and a personal library.",
+        proj9_name: "CyberLab — Cybersecurity learning", proj9_desc: "A local learning platform with six modules, lessons, simulated labs and progressive quizzes. Progress is saved in the browser and exercises never target external systems.",
+        proj9_role: "Designed and built a safe, interactive learning path for cybersecurity beginners.",
+        proj_view_hint: "<svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M2.5 12s3.2-5 9.5-5 9.5 5 9.5 5-3.2 5-9.5 5-9.5-5-9.5-5Z\"/><circle cx=\"12\" cy=\"12\" r=\"2.5\"/></svg> View details",
+        proj_visit: "Visit site ↗",
+        proj_status_personal: "Personal project",
+        proj_status_prototype: "Prototype",
+        proj_status_delivered: "Delivered project",
+        certif_title: "My certifications",
         filter_all: "All", filter_sec: "Cybersecurity & AI", filter_web: "Web & Networking", filter_badge: "Badges",
-        parcours_tag: "05 — Education", parcours_title: "My academic path",
+        parcours_title: "My journey",
+        tl_l1: "Bachelor's in Computer Science at ESGIS", tl_current: "In progress.",
         tl_mention: "Passed with honors.", tl_obtenu: "Obtained.",
-        contact_tag: "06 — Contact", contact_title: "Let's talk",
-        contact_intro: "Available for internships, hands-on projects or any opportunity in IT.",
-        contact_email: "Email", contact_phone: "Phone", contact_loc: "Location",
+        contact_title: "Let's talk",
+        contact_intro: "Have a project, internship opportunity or a question? Feel free to reach out.",
+        contact_email_btn: "Send an email", contact_whatsapp_btn: "Write on WhatsApp",
+        proj_repo: "View code on GitHub ↗",
+        contact_email: "Email", contact_phone: "Phone", contact_whatsapp: "WhatsApp", contact_loc: "Location",
         footer_rights: "All rights reserved",
         modal_verify: "Verify certification"
     }
@@ -118,12 +156,14 @@ function applyLang(lang) {
         if (dict[key] !== undefined) el.setAttribute('title', dict[key]);
     });
     htmlEl.setAttribute('lang', lang);
-    langLabel.textContent = lang.toUpperCase();
-    flagFr.style.display = lang === 'en' ? 'block' : 'none';
-    flagEn.style.display = lang === 'fr' ? 'block' : 'none';
+    const targetLang = lang === 'fr' ? 'en' : 'fr';
+    langLabel.textContent = targetLang.toUpperCase();
+    flagFr.style.display = targetLang === 'fr' ? 'block' : 'none';
+    flagEn.style.display = targetLang === 'en' ? 'block' : 'none';
     localStorage.setItem('lang', lang);
     renderCertifications(lang);
     applyFilter(currentFilter, lang);
+    renderProjects(lang);
 }
 
 const savedLang = localStorage.getItem('lang') || 'fr';
@@ -141,7 +181,7 @@ const certifications = [
         issuer: 'Red Team Leaders',
         date: '13/02/2026',
         category: 'securite',
-        image: 'rtl-caisr.jpg',
+        image: 'certifications/rtl-caisr.jpg',
         verify: 'https://courses.redteamleaders.com/exam-completion/b062c0fc69e865b6'
     },
     {
@@ -150,7 +190,7 @@ const certifications = [
         issuer: 'Red Team Leaders',
         date: '20/06/2026',
         category: 'securite',
-        image: 'rtl-cllmsp.jpg',
+        image: 'certifications/rtl-cllmsp.jpg',
         verify: 'https://courses.redteamleaders.com/exam-completion/86b60c0464e51e6f'
     },
     {
@@ -159,7 +199,7 @@ const certifications = [
         issuer: 'Cisco Networking Academy',
         date: '08/03/2026',
         category: 'securite',
-        image: 'cisco-cyberintro.jpg',
+        image: 'certifications/cisco-cyberintro.jpg',
         verify: null
     },
     {
@@ -168,7 +208,7 @@ const certifications = [
         issuer: 'HP LIFE / HP Foundation',
         date: '29/06/2026',
         category: 'securite',
-        image: 'hp-cyberaware.jpg',
+        image: 'certifications/hp-cyberaware.jpg',
         verify: null
     },
     {
@@ -177,7 +217,7 @@ const certifications = [
         issuer: 'Heure IA',
         date: '30/06/2026',
         category: 'securite',
-        image: 'heureia-principes.jpg',
+        image: 'certifications/heureia-principes.jpg',
         verify: null
     },
     {
@@ -186,7 +226,7 @@ const certifications = [
         issuer: 'HP LIFE / HP Foundation',
         date: '29/06/2026',
         category: 'web',
-        image: 'hp-webbiz.jpg',
+        image: 'certifications/hp-webbiz.jpg',
         verify: null
     },
     {
@@ -195,7 +235,7 @@ const certifications = [
         issuer: 'HP LIFE / HP Foundation',
         date: '29/06/2026',
         category: 'web',
-        image: 'hp-networking.jpg',
+        image: 'certifications/hp-networking.jpg',
         verify: null
     },
     {
@@ -204,7 +244,25 @@ const certifications = [
         issuer: 'Cisco Networking Academy',
         date: '21/07/2026',
         category: 'web',
-        image: 'cisco-ite702.jpg',
+        image: 'certifications/cisco-ite702.jpg',
+        verify: null
+    },
+    {
+        id: 'badge-it-essentials',
+        title: 'IT Essentials',
+        issuer: 'Cisco Networking Academy',
+        date: null,
+        category: 'badge',
+        image: 'certifications/badge-it-essentials.png',
+        verify: null
+    },
+    {
+        id: 'badge-cybersecurity',
+        title: 'Introduction to Cybersecurity',
+        issuer: 'Cisco Networking Academy',
+        date: null,
+        category: 'badge',
+        image: 'certifications/badge-cybersecurity.png',
         verify: null
     }
 ];
@@ -291,81 +349,193 @@ document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') closeModal();
 });
 
+/* ============ PROJETS (grille image-forward + modale) ============ */
+const projects = [
+    { id: 'klasso', key: 'proj4', status: 'personal', role: 'Conception de l’interface et développement des écrans de gestion.', repo: null, tags: ['HTML', 'CSS', 'JavaScript'],
+        images: ['projects/klasso-1-home.jpg', 'projects/klasso-2-plans.jpg', 'projects/klasso-3-signup.jpg', 'projects/klasso-4-dashboard.jpg'],
+        link: 'https://klasso-website.netlify.app/' },
+    { id: 'nowpay', key: 'proj5', status: 'prototype', role: 'Conception du prototype et intégration des écrans principaux.', repo: null, tags: ['Next.js', 'Supabase', 'IA'],
+        images: ['projects/nowpay-1-nouvelle-creance.png', 'projects/nowpay-2-dashboard.jpg', 'projects/nowpay-3-mobile-aujourdhui.jpg', 'projects/nowpay-4-mobile-historique.jpg'],
+        link: 'https://nowpay.website' },
+    { id: 'payrollbassit', key: 'proj6', status: 'delivered', role: 'Réalisation du site vitrine et structuration des contenus.', repo: null, tags: ['Bolt', 'HTML', 'CSS'],
+        images: ['projects/payrollbassit-1-accueil.png', 'projects/payrollbassit-2-musique.png', 'projects/payrollbassit-3-concerts.png'],
+        link: 'https://payroll-bassit.bolt.host' },
+    { id: 'campusevents', key: 'proj7', status: 'prototype', roleKey: 'proj7_role', repo: 'https://github.com/elmonumento/CampusEvents', tags: ['PHP', 'MySQL', 'CSS'],
+        images: ['projects/campusevents-1-dashboard.png', 'projects/campusevents-2-connexion.png', 'projects/campusevents-3-evenement.png'], link: null },
+    { id: 'soundwave', key: 'proj8', status: 'personal', roleKey: 'proj8_role', repo: 'https://github.com/elmonumento/SoundWave', tags: ['Next.js', 'React', 'TypeScript', 'MySQL'],
+        images: ['projects/soundwave-overview.png'], link: null },
+    { id: 'cyberlab', key: 'proj9', status: 'prototype', roleKey: 'proj9_role', repo: 'https://github.com/elmonumento/CyberLab', tags: ['HTML', 'CSS', 'JavaScript', 'Cybersécurité'],
+        images: ['projects/cyberlab-home.png'], link: 'https://thecyberlab.netlify.app/' }
+];
+
+const projectGrid = document.getElementById('project-grid');
+
+function renderProjects(lang) {
+    const dict = translations[lang];
+    projectGrid.innerHTML = '';
+    projects.forEach(p => {
+        const card = document.createElement('div');
+        card.className = 'project-card';
+        const cover = p.images[0];
+        const thumbHtml = cover
+            ? `<img class="project-thumb" src="${cover}" alt="${dict[p.key + '_name']}">`
+            : `<div class="project-thumb project-thumb-placeholder"><span>&lt;/&gt;</span></div>`;
+        const countHtml = p.images.length > 1 ? `<span class="project-thumb-count">${p.images.length} 📷</span>` : '';
+        card.innerHTML = `
+            <div class="project-thumb-wrap" data-id="${p.id}" role="button" tabindex="0" aria-label="${dict[p.key + '_name']}">
+                ${thumbHtml}
+                ${countHtml}
+                <span class="project-thumb-hint">${dict.proj_view_hint}</span>
+            </div>
+            <div class="project-body">
+                <h3>${dict[p.key + '_name']}</h3>
+                <span class="project-status">${dict['proj_status_' + p.status]}</span>
+                <div class="card-tags">${p.tags.map(t => `<span class="pill pill-sm">${t}</span>`).join('')}</div>
+            </div>
+        `;
+        projectGrid.appendChild(card);
+    });
+    projectGrid.querySelectorAll('.project-thumb-wrap').forEach(el => {
+        el.addEventListener('click', () => openProjectModal(el.getAttribute('data-id'), lang));
+        el.addEventListener('keydown', event => {
+            if (event.key === 'Enter' || event.key === ' ') {
+                event.preventDefault();
+                openProjectModal(el.getAttribute('data-id'), lang);
+            }
+        });
+    });
+}
+
+/* ============ MODALE PROJET ============ */
+const projectModal = document.getElementById('project-modal');
+const projectModalMedia = document.getElementById('project-modal-media');
+const projectModalImage = document.getElementById('project-modal-image');
+const projectModalPlaceholder = document.getElementById('project-modal-placeholder');
+const projectModalPrev = document.getElementById('project-modal-prev');
+const projectModalNext = document.getElementById('project-modal-next');
+const projectModalCounter = document.getElementById('project-modal-counter');
+const projectModalTitle = document.getElementById('project-modal-title');
+const projectModalTags = document.getElementById('project-modal-tags');
+const projectModalDesc = document.getElementById('project-modal-desc');
+const projectModalStatus = document.getElementById('project-modal-status');
+const projectModalRole = document.getElementById('project-modal-role');
+const projectModalRepo = document.getElementById('project-modal-repo');
+const projectModalLink = document.getElementById('project-modal-link');
+const projectModalClose = document.getElementById('project-modal-close');
+
+let currentProject = null;
+let currentProjectIndex = 0;
+
+function showProjectImage() {
+    const imgs = currentProject.images;
+    const multi = imgs.length > 1;
+    projectModalPrev.style.display = multi ? 'flex' : 'none';
+    projectModalNext.style.display = multi ? 'flex' : 'none';
+    if (imgs.length) {
+        projectModalImage.src = imgs[currentProjectIndex];
+        projectModalImage.style.display = 'block';
+        projectModalPlaceholder.style.display = 'none';
+        projectModalCounter.style.display = multi ? 'block' : 'none';
+        projectModalCounter.textContent = `${currentProjectIndex + 1} / ${imgs.length}`;
+    } else {
+        projectModalImage.style.display = 'none';
+        projectModalPlaceholder.style.display = 'flex';
+        projectModalCounter.style.display = 'none';
+    }
+}
+
+function openProjectModal(id, lang) {
+    const p = projects.find(pr => pr.id === id);
+    if (!p) return;
+    const dict = translations[lang];
+    currentProject = p;
+    currentProjectIndex = 0;
+    showProjectImage();
+    projectModalTitle.textContent = dict[p.key + '_name'];
+    projectModalStatus.textContent = dict['proj_status_' + p.status];
+    projectModalDesc.textContent = dict[p.key + '_desc'];
+    projectModalRole.textContent = p.roleKey ? dict[p.roleKey] : p.role;
+    projectModalTags.innerHTML = p.tags.map(t => `<span class="pill pill-sm">${t}</span>`).join('');
+    if (p.repo) {
+        projectModalRepo.href = p.repo;
+        projectModalRepo.textContent = dict.proj_repo;
+        projectModalRepo.style.display = 'inline-block';
+    } else {
+        projectModalRepo.style.display = 'none';
+        projectModalRepo.removeAttribute('href');
+    }
+    if (p.link) {
+        projectModalLink.href = p.link;
+        projectModalLink.textContent = dict.proj_visit;
+        projectModalLink.style.display = 'inline-block';
+    } else {
+        projectModalLink.style.display = 'none';
+        projectModalLink.removeAttribute('href');
+    }
+    projectModal.classList.add('open');
+}
+
+function closeProjectModal() {
+    projectModal.classList.remove('open');
+}
+
+projectModalClose.addEventListener('click', closeProjectModal);
+projectModalPrev.addEventListener('click', () => {
+    currentProjectIndex = (currentProjectIndex - 1 + currentProject.images.length) % currentProject.images.length;
+    showProjectImage();
+});
+projectModalNext.addEventListener('click', () => {
+    currentProjectIndex = (currentProjectIndex + 1) % currentProject.images.length;
+    showProjectImage();
+});
+projectModal.addEventListener('click', (e) => {
+    if (e.target === projectModal) closeProjectModal();
+});
+
+/* ============ OUTILS : liens officiels ============ */
+(function () {
+    const links = [
+        'https://www.microsoft.com/windows',
+        'https://www.linux.org/',
+        'https://www.virtualbox.org/',
+        'https://www.netacad.com/courses/packet-tracer',
+        'https://www.gns3.com/',
+        'https://www.wireshark.org/',
+        'https://code.visualstudio.com/',
+        'https://git-scm.com/',
+        'https://github.com/elmonumento'
+    ];
+    const toolPills = document.querySelectorAll('.tech-pills')[0];
+    if (!toolPills) return;
+    toolPills.querySelectorAll('.tech-pill').forEach((pill, index) => {
+        const link = document.createElement('a');
+        link.href = links[index];
+        link.target = '_blank';
+        link.rel = 'noopener';
+        link.className = pill.className;
+        link.title = pill.title;
+        link.setAttribute('aria-label', pill.getAttribute('aria-label') || pill.title);
+        link.innerHTML = pill.innerHTML;
+        pill.replaceWith(link);
+    });
+}());
+document.addEventListener('keydown', (e) => {
+    if (!projectModal.classList.contains('open')) return;
+    if (e.key === 'Escape') closeProjectModal();
+    if (e.key === 'ArrowLeft') projectModalPrev.click();
+    if (e.key === 'ArrowRight') projectModalNext.click();
+});
+
 /* Initial render */
 applyLang(savedLang);
 
-/* ============ GALERIE PROJET ============ */
-const projectGalleries = {
-    klasso: [
-        'klasso-1-home.jpg',
-        'klasso-2-plans.jpg',
-        'klasso-3-signup.jpg',
-        'klasso-4-dashboard.jpg'
-    ],
-    ecommerce: [
-        '4epshop-1-maillots.jpg',
-        '4epshop-2-montres.jpg',
-        '4epshop-3-panier.jpg'
-    ]
-};
-
-const galleryModal = document.getElementById('gallery-modal');
-const galleryImage = document.getElementById('gallery-image');
-const galleryCounter = document.getElementById('gallery-counter');
-const galleryClose = document.getElementById('gallery-close');
-const galleryPrev = document.getElementById('gallery-prev');
-const galleryNext = document.getElementById('gallery-next');
-
-let currentGallery = [];
-let currentIndex = 0;
-
-function showGalleryImage() {
-    galleryImage.src = currentGallery[currentIndex];
-    galleryCounter.textContent = `${currentIndex + 1} / ${currentGallery.length}`;
-}
-
-function openGallery(projectKey) {
-    const imgs = projectGalleries[projectKey];
-    if (!imgs) return;
-    currentGallery = imgs;
-    currentIndex = 0;
-    showGalleryImage();
-    galleryModal.classList.add('open');
-}
-
-function closeGallery() {
-    galleryModal.classList.remove('open');
-}
-
-document.querySelectorAll('.card-clickable').forEach(card => {
-    card.addEventListener('click', () => openGallery(card.getAttribute('data-project')));
-});
-
-galleryClose.addEventListener('click', closeGallery);
-galleryPrev.addEventListener('click', () => {
-    currentIndex = (currentIndex - 1 + currentGallery.length) % currentGallery.length;
-    showGalleryImage();
-});
-galleryNext.addEventListener('click', () => {
-    currentIndex = (currentIndex + 1) % currentGallery.length;
-    showGalleryImage();
-});
-galleryModal.addEventListener('click', (e) => {
-    if (e.target === galleryModal) closeGallery();
-});
-document.addEventListener('keydown', (e) => {
-    if (!galleryModal.classList.contains('open')) return;
-    if (e.key === 'Escape') closeGallery();
-    if (e.key === 'ArrowLeft') galleryPrev.click();
-    if (e.key === 'ArrowRight') galleryNext.click();
-});
-
-/* ============ FOND ANIMÉ — CÂBLES & SIGNAUX SANS FIL ============ */
+/* ============ FOND ANIMÉ — MAILLAGE RÉSEAU ============ */
 const canvas = document.getElementById('netbg');
 const ctx = canvas.getContext('2d');
-let cables = [];
-let apNodes = [];
 const prefersReducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+let nodes = [];
+let links = [];
+let cables = [];
 
 function resizeCanvas() {
     canvas.width = window.innerWidth;
@@ -377,57 +547,32 @@ function rand(min, max) {
     return min + Math.random() * (max - min);
 }
 
-/* Grille de points en arrière-plan, très discrète, pour donner de la texture */
-let gridDots = [];
-
-function generateGrid() {
-    gridDots = [];
-    const spacing = 60;
-    for (let x = spacing / 2; x < canvas.width; x += spacing) {
-        for (let y = spacing / 2; y < canvas.height; y += spacing) {
-            gridDots.push({ x, y });
-        }
-    }
-}
-
-/* Câbles réseau : courbes de Bézier qui ondulent lentement */
 function generateScene() {
-    generateGrid();
     const area = canvas.width * canvas.height;
-    const cableCount = Math.min(15, Math.max(7, Math.floor(area / 165000)));
-    cables = [];
-
-    for (let i = 0; i < cableCount; i++) {
-        const y = rand(0, canvas.height);
-        cables.push({
-            base: [
-                { x: rand(-100, canvas.width * 0.25), y: rand(0, canvas.height) },
-                { x: rand(canvas.width * 0.25, canvas.width * 0.55), y: rand(0, canvas.height) },
-                { x: rand(canvas.width * 0.45, canvas.width * 0.75), y: rand(0, canvas.height) },
-                { x: rand(canvas.width * 0.75, canvas.width + 100), y: rand(0, canvas.height) }
-            ],
-            amp: rand(18, 42),
-            phase: rand(0, Math.PI * 2),
-            speed: rand(0.00028, 0.00048),
-            dashSpeed: rand(0.02, 0.035) * (Math.random() < 0.5 ? 1 : -1),
-            packetOffset: rand(0, 1),
-            packetSpeed: rand(0.00009, 0.00016) * (Math.random() < 0.5 ? 1 : -1),
-            opacity: rand(0.55, 1),
-            y
+    const count = Math.min(34, Math.max(14, Math.floor(area / 50000)));
+    nodes = Array.from({ length: count }, () => ({
+        x: rand(0, canvas.width),
+        y: rand(0, canvas.height),
+        phase: rand(0, Math.PI * 2)
+    }));
+    links = [];
+    cables = Array.from({ length: Math.min(7, Math.max(3, Math.floor(canvas.width / 260))) }, (_, index) => ({
+        y: rand(canvas.height * 0.08, canvas.height * 0.92),
+        offset: rand(0, Math.PI * 2),
+        amplitude: rand(14, 34),
+        speed: rand(0.00025, 0.0005),
+        phase: index * 0.8
+    }));
+    nodes.forEach((node, index) => {
+        const nearest = nodes
+            .map((other, otherIndex) => ({ other, otherIndex, distance: Math.hypot(node.x - other.x, node.y - other.y) }))
+            .filter(item => item.otherIndex !== index)
+            .sort((a, b) => a.distance - b.distance)
+            .slice(0, 2);
+        nearest.forEach(item => {
+            if (item.distance < 300 && index < item.otherIndex) links.push([index, item.otherIndex]);
         });
-    }
-
-    const apCount = Math.min(8, Math.max(4, Math.floor(area / 320000)));
-    apNodes = [];
-    for (let i = 0; i < apCount; i++) {
-        apNodes.push({
-            x: rand(canvas.width * 0.08, canvas.width * 0.92),
-            y: rand(canvas.height * 0.1, canvas.height * 0.9),
-            period: rand(3200, 4600),
-            offset: rand(0, 4000),
-            maxR: rand(70, 120)
-        });
-    }
+    });
 }
 
 function getColors() {
@@ -439,100 +584,55 @@ function getColors() {
     };
 }
 
-function cubicPoint(p0, p1, p2, p3, t) {
-    const u = 1 - t;
-    const x = u * u * u * p0.x + 3 * u * u * t * p1.x + 3 * u * t * t * p2.x + t * t * t * p3.x;
-    const y = u * u * u * p0.y + 3 * u * u * t * p1.y + 3 * u * t * t * p2.y + t * t * t * p3.y;
-    return { x, y };
-}
-
 let t0 = performance.now();
 
 function drawFrame(now) {
     const elapsed = now - t0;
     const { line, dot, accent } = getColors();
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-    /* Grille de points discrète en fond, pour la texture */
     ctx.fillStyle = dot;
-    ctx.globalAlpha = 0.35;
-    gridDots.forEach(g => {
+    nodes.forEach(node => {
         ctx.beginPath();
-        ctx.arc(g.x, g.y, 1, 0, Math.PI * 2);
+        ctx.arc(node.x, node.y, 1.5, 0, Math.PI * 2);
         ctx.fill();
     });
-    ctx.globalAlpha = 1;
-
-    /* Câbles ondulants avec flux de données + connecteurs + paquet */
-    cables.forEach(c => {
-        const sway = prefersReducedMotion ? 0 : elapsed * c.speed;
-        const pts = c.base.map((p, i) => ({
-            x: p.x,
-            y: p.y + Math.sin(sway + c.phase + i * 1.1) * c.amp
-        }));
-
-        ctx.globalAlpha = c.opacity;
-        ctx.strokeStyle = line;
-        ctx.lineWidth = 1.4;
-        ctx.lineCap = 'round';
-        ctx.setLineDash([2.5, 13]);
-        ctx.lineDashOffset = prefersReducedMotion ? 0 : -elapsed * c.dashSpeed;
-
+    ctx.strokeStyle = line;
+    ctx.lineWidth = 1;
+    links.forEach(([from, to]) => {
         ctx.beginPath();
-        ctx.moveTo(pts[0].x, pts[0].y);
-        ctx.bezierCurveTo(pts[1].x, pts[1].y, pts[2].x, pts[2].y, pts[3].x, pts[3].y);
+        ctx.moveTo(nodes[from].x, nodes[from].y);
+        ctx.lineTo(nodes[to].x, nodes[to].y);
+        ctx.stroke();
+    });
+    ctx.lineWidth = 1.6;
+    ctx.lineCap = 'round';
+    cables.forEach(cable => {
+        const wave = prefersReducedMotion ? 0 : elapsed * cable.speed;
+        const y = cable.y + Math.sin(wave + cable.offset) * cable.amplitude;
+        const p0 = { x: -80, y };
+        const p1 = { x: canvas.width * 0.28, y: y + Math.sin(wave + cable.phase) * cable.amplitude };
+        const p2 = { x: canvas.width * 0.7, y: y - Math.sin(wave + cable.phase) * cable.amplitude };
+        const p3 = { x: canvas.width + 80, y };
+        ctx.strokeStyle = line;
+        ctx.setLineDash([3, 16]);
+        ctx.lineDashOffset = prefersReducedMotion ? 0 : -elapsed * 0.025;
+        ctx.beginPath();
+        ctx.moveTo(p0.x, p0.y);
+        ctx.bezierCurveTo(p1.x, p1.y, p2.x, p2.y, p3.x, p3.y);
         ctx.stroke();
         ctx.setLineDash([]);
-
-        /* Connecteurs (petits carrés type prise RJ45) aux deux extrémités visibles */
-        [pts[0], pts[3]].forEach(p => {
-            ctx.fillStyle = line;
-            ctx.fillRect(p.x - 3, p.y - 3, 6, 6);
-        });
-
-        /* Paquet de données qui voyage sur le câble */
-        const pt = prefersReducedMotion ? c.packetOffset : (c.packetOffset + elapsed * c.packetSpeed + 1000) % 1;
-        const pp = cubicPoint(pts[0], pts[1], pts[2], pts[3], pt);
-        ctx.save();
-        ctx.shadowColor = accent;
-        ctx.shadowBlur = 7;
-        ctx.fillStyle = accent;
-        ctx.beginPath();
-        ctx.arc(pp.x, pp.y, 2.6, 0, Math.PI * 2);
-        ctx.fill();
-        ctx.restore();
     });
-    ctx.globalAlpha = 1;
-
-    /* Points d'accès : icône routeur + signaux Wi-Fi concentriques */
-    apNodes.forEach(n => {
-        ctx.fillStyle = accent;
-        ctx.fillRect(n.x - 4, n.y - 3, 8, 6);
-        ctx.strokeStyle = accent;
-        ctx.lineWidth = 1.2;
-        ctx.beginPath();
-        ctx.moveTo(n.x - 2.5, n.y - 3);
-        ctx.lineTo(n.x - 2.5, n.y - 8);
-        ctx.moveTo(n.x + 2.5, n.y - 3);
-        ctx.lineTo(n.x + 2.5, n.y - 8);
-        ctx.stroke();
-
-        for (let ring = 0; ring < 3; ring++) {
-            const t = prefersReducedMotion
-                ? ring / 3
-                : (((elapsed + n.offset + ring * (n.period / 3)) % n.period) / n.period);
-            const r = t * n.maxR;
-            const alpha = (1 - t) * 0.45;
-            ctx.strokeStyle = accent;
-            ctx.globalAlpha = Math.max(alpha, 0);
-            ctx.lineWidth = 1.3;
+    if (!prefersReducedMotion) {
+        nodes.forEach(node => {
+            const pulse = (Math.sin(elapsed * 0.001 + node.phase) + 1) / 2;
+            ctx.globalAlpha = pulse * 0.22;
+            ctx.fillStyle = accent;
             ctx.beginPath();
-            ctx.arc(n.x, n.y, r, 0, Math.PI * 2);
-            ctx.stroke();
-        }
-        ctx.globalAlpha = 1;
-    });
-
+            ctx.arc(node.x, node.y, 2 + pulse * 3, 0, Math.PI * 2);
+            ctx.fill();
+        });
+    }
+    ctx.globalAlpha = 1;
     requestAnimationFrame(drawFrame);
 }
 
